@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Esto es el t&iacute;tulo de la p&aacute;gina.</title>
+          <link rel="stylesheet" href="estilos.css">
+    </head>
+        <body>
+
+        <form class="formulario" action="http://localhost:3000//posts">
+            <h1>Registro De Empresa</h1>
+            <div class="container">
+                <div class="input-container">
+                    <i class="fas fa-user icon"></i>
+                    <input type="text" placeholder="Nombre">
+                </div>
+                <div class="input-container">
+                    <i class="fas fa-envelope icon"></i>
+                    <input type="text" placeholder="Correo electronico">
+                </div>
+                <div class="input-container">
+                <i class="fas fa-key icon"></i>
+                <input type="password" placeholder="NIT">
+            </div>
+            <input type="submit" value="registro" class="button">
+            <p>primer texto ingreso<a class="link" href="login.html">iniciar</a></p>
+
+
+            </div>
+        </form>
+            
+          </body>
+
+              
+                      
+</html>
+<!--
+<div>
+    <form class="ui form" action="/posts" method="post">
+        <input type="text" name="post[titulo]" value="" placeholder="Titulo">
+        <input type="text" name="post[foto]" value="" placeholder="Foto">
+        <textarea name="post[contenido]" rows="4" cols="43" placeholder="Contenido"></textarea>
+        <button type="submit" name="" class="ui secondary big basic button">Enviar</button>
+        </form>     
+
+</div>
+*/-->
+
+<form class="ui form" action="/posts" method="POST">
+<input type="text" name="post[titulo]" value="" placeholder="Titulo">
+<input type="text" name="post[foto]" value="" placeholder="foto">
+<textarea name="post[contenido]" rows="4" cols="7" placeholder="Contenido"></textarea>
+<button type="submit" name="" class="ui secundary big basic button">Enviar </button>
+</form>
